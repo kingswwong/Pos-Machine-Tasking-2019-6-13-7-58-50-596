@@ -5,7 +5,7 @@ it('should be {"id": "0001", "name" : "Coca Cola", "price": 3} when get barcode 
     const barcode = "0001";
     //when
     const result = getItem(barcode)
-    let toBeItem = {"id": "0001", "name" : "Coca Cola", "price": 3};
+    const toBeItem = {"id": "0001", "name": "Coca Cola", "price": 3};
     //then
     expect(JSON.stringify(result)).toBe(JSON.stringify(toBeItem));
 });
