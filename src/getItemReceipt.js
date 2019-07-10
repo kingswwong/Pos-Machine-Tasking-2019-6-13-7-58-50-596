@@ -6,9 +6,10 @@ function getItemReceipt(barcodes) {
     let items = getItems(barcodes)
     let totalPrice = getTotalPrice(items)
     let result = "Receipts\n" +
-        "------------------------------------------------------------";
-    result += getItemMsg(barcodes);
-    result += "------------------------------------------------------------";
+        "------------------------------------------------------------\n";
+    result += getItemMsg(items);
+    result += "\n";
+    result += "------------------------------------------------------------\n";
     result += "Price: " + totalPrice;
     return result;
 }
